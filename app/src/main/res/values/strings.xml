@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CookBook</string>
+    <string name="texte_d_intro">Texte d\'intro</string>
+    <string name="nom_ou_id_de_recette">Nom ou ID de recette</string>
+    <string name="todo">TODO</string>
+    <string name="cat_gorie">Catégorie :</string>
+    <string name="background_layout_recipe">background_Layout_Recipe</string>
+    <string name="recherche">Recherche...</string>
+</resources>
