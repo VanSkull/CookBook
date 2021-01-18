@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#414141"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/searchRecipe_home"
@@ -33,10 +33,72 @@
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="34dp"
         android:background="#00FFFFFF"
-        android:contentDescription="@string/todo"
+        android:contentDescription="@string/icon_search"
         app:layout_constraintBottom_toBottomOf="@+id/searchRecipe_home"
         app:layout_constraintEnd_toEndOf="@+id/searchRecipe_home"
         app:layout_constraintTop_toTopOf="@+id/searchRecipe_home"
         app:layout_constraintVertical_bias="0.444"
         app:srcCompat="@drawable/search_icon" />
+
+    <Button
+        android:id="@+id/addRecipe"
+        android:layout_width="159dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/ajouter_une_recette"
+        android:textAlignment="textEnd"
+        android:textColor="#414141"
+        android:textSize="8sp"
+        android:onClick="goToSearch"
+        app:backgroundTint="#FFFFFF"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/createRecipe"
+        android:layout_width="159dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="16dp"
+        android:paddingEnd="20dp"
+        android:text="@string/cr_er_une_recette"
+        android:textAlignment="textEnd"
+        android:textColor="#414141"
+        android:textSize="8sp"
+        android:onClick="goToCreate"
+        app:backgroundTint="#FFFFFF"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/addRecipeIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:background="#FFFF0000"
+        android:scaleType="fitXY"
+        android:onClick="goToSearch"
+        app:layout_constraintBottom_toBottomOf="@+id/addRecipe"
+        app:layout_constraintStart_toStartOf="@+id/addRecipe"
+        app:layout_constraintTop_toTopOf="@+id/addRecipe"
+        app:layout_constraintVertical_bias="0.523"
+        app:srcCompat="@drawable/plus_icon"
+        android:contentDescription="@string/todo" />
+
+    <ImageButton
+        android:id="@+id/createRecipeIcon"
+        android:layout_width="22dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/todo"
+        android:onClick="goToCreate"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/createRecipe"
+        app:layout_constraintStart_toStartOf="@+id/createRecipe"
+        app:layout_constraintTop_toTopOf="@+id/createRecipe"
+        app:srcCompat="@drawable/pen_icon" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

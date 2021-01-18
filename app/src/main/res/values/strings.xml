@@ -6,4 +6,7 @@
     <string name="cat_gorie">Catégorie :</string>
     <string name="background_layout_recipe">background_Layout_Recipe</string>
     <string name="recherche">Recherche...</string>
+    <string name="ajouter_une_recette">Ajouter une recette</string>
+    <string name="cr_er_une_recette">Créer une recette</string>
+    <string name="icon_search">icon search</string>
 </resources>
